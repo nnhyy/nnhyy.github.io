@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	mfp</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript" src="script/js.js"></script>
+	<style>
+		ul{
+			margin: 0;
+			padding: 0;
+		}
+		ul li{
+			list-style-type: none;
+
+		}
+		a{
+			text-decoration: none;
+		}
+		p{
+			font-size: 13px;
+			line-height: 1.3em;
+		}
+		.container{
+			margin: 0 auto;
+			width: 960px;
+		}
+		.header{
+			padding: 50px 0;
+			background-color: slategray; 
+		}
+		.header h1,
+		.header h2{
+			color: white;
+			text-align: center;
+		}
+		.navigation{
+			background-color: #222;
+			border-color: #101010;
+			min-height: 64px;
+		}
+		.navigation li{
+			float: left;
+			width: 100px;
+		}
+		.navigation a{
+			display: block;
+			color: #9d9d9d;
+			line-height: 4em;
+			font-weight: bold;
+			text-align: center; 
+		}
+		.navigation li a:hover{
+			color: yellow;
+			background-color: black;
+		}
+		.collection{
+			overflow: auto;
+		}
+		.zglp{
+			padding-bottom: 5px;
+			border-bottom: 1px solid #777;
+			font-size: 36px; 
+		}
+		.zglp small{
+			color: #777;
+			font-size: 70%;
+		}
+		.collection-item-outer{
+			display: inline-block;
+			float: left;
+			padding-left: 5px;
+			padding-right: 5px;
+			width: 32%;
+			box-sizing; border-box;
+		}
+
+		.collection-item{
+			border: 1px solid #959595;
+		}
+		.collection-item img{
+			width: 100%;
+		}
+		.collection-text{
+			padding: 0 20px 20px 20px;
+		}
+		.collection-text h3{
+			color: yellowgreen
+		}
+		.collection-text p{
+			height: 80px;
+			overflow: hidden;
+		}
+		.collection-text button{
+			padding: 10px;
+			border: 1px solid transparent;
+			border-radius: 5px;
+			outline: none;
+			text-decoration: none;
+		}
+		.buy{
+			float: right;
+		}
+		button:hover {
+			background-color: darkgrey;
+			color: white;
+		}
+		.footer{
+			background-color: grey;
+			color: white;
+			padding: 20px 0;
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+		<header class="header">
+			<div class="container">	
+               <h1>My Dreams</h1>
+               <h2>
+               	<small>by Bogdan Strazhnik</small>
+               </h2>
+			</div>
+		</header>
+		<nav class="navigation">
+			<div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Audi.html">Audi</a></li>
+					<li><a href="Lamborghini.html">Lamborghini</a></li>
+					<li><a href="Mercedes.html">Mercedes</a></li>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<div class="container">
+				<h2 class="zglp">Photo <small>List style type</small></h2>
+				<div class="collection">
+					<div class="collection-item-outer">
+						<div class="collection-item">
+							<img src="img/audi.jpg" width="150">
+						
+								<div class="collection-text">
+									<h3>List Element Item</h3>
+									<p>Audi Q7 першого покоління, що представлена в 2005 році, уніфікована з моделями Volkswagen Touareg і Porsche Cayenne, відрізняючись від останніх збільшеними розмірами, місткістю та рівнем оздоблення. Ці автомобілі призначені насамперед для північноамериканського ринку, де подібна техніка дуже популярна. Передбачені як п'яти-, так шести- і семимісні варіанти салону. У базовому виконанні незалежна підвіска всіх коліс оснащена звичайними пружинами і 2-трубними амортизаторами, але за замовленням може бути встановлена адаптивна п'ятирежимна пневмопідвіска з амортизаторами змінної жорсткості і системою вирівнювання крену кузова в залежності від навантаження. Оснащення моделей Q7 включає ряд систем, істотно підвищують активну безпеку руху. У їх числі — адаптивний круїз-контроль АСС з радіолокаційним і бічними радарами, відслідковувати появу автомобілів на сусідніх смугах руху. Базові силові агрегати включають 3,0-літровий високомоментних турбонадувних дизелів V6 TDI потужністю 233 к.с. і новий бензиновий 3,6-літровий 280-сильний двигун V6 FSI. Потужніші версії комплектуються 4,2-літровими двигунами: V8-бензиновим FSI (350 к.с.) та турбонадувним дизелем (326 к.с.). Всі мотори працюють тільки з адаптивними гідромеханічними 6-ступінчастими «автоматами»</p>
+									<button onclick="showText(this)">Reed more...</button>
+									<button class="buy"><a href="https://auto.ria.com/uk/search/?categories.main.id=1&brand.id[0]=6&model.id[0]=54664&price.currency=1&abroad.not=0&custom.not=1&page=0&size=10">Buy</a></button>
+								</div>
+						</div>
+					</div>	
+							
+					<div class="collection-item-outer">
+						<div class="collection-item">
+							<img src="img/urus.jpg" width="150">
+						
+								<div class="collection-text">
+									<h3>List Element Item</h3>
+				
+									<p>Концепт-кар автомобіля був показаний у 2012 році на Пекінському автосалоні.[1] Серійна версія буде збиратися в м. Братислава на заводі Volkswagen Bratislava Plant, поруч з Volkswagen Touareg, Audi Q7, Porsche Cayenne, Bentley Bentayga[2].
+
+За давньою традицією, назва кожної нової моделі Lamborghini запозичується зі світу бойових биків. Urus, також відомий як "тур" або "первісний бик", є одним з найбільших представників диких предків цих домашніх тварин.
+
+4 грудня 2017 року офіційно презентовано серійну модель Lamborghini Urus. Навесні 2018 року почнуться продажі автомобіля.</p>
+									<button onclick="showText(this)">Reed more...</button>
+									<button class="buy"><a href="https://auto.ria.com/uk/search/?categories.main.id=1&brand.id[0]=35&model.id[0]=43546&price.currency=1&abroad.not=0&custom.not=1&page=0&size=10">Buy</a></button>	
+								</div>
+						</div>
+					</div>	
+							
+					<div class="collection-item-outer">
+						<div class="collection-item">
+							<img src="img/mercedes.jpg" width="150">
+						
+								<div class="collection-text">
+									<h3>List Element Item</h3>
+									<p>Mercedes-AMG GmbH (зазвичай зване просто AMG) — підрозділ Мерседес-Бенц з доведення (тюнінгу) серійних машин, а також представленню інтересів Мерседес в автоспорті. Таким чином (на відміну від Brabus, Carlsson або Kicherer), AMG є єдиним «офіційним» тюнінговим ательє Mercedes-Benz.
+
+Назва AMG — абревіатура: A і M відповідно перші літери прізвищ Ауфрехт і Мельхер, третя ж буква G — від міста Großaspach під Штутгартом, в якому народився Ханс-Вернер Ауфрехт.[1</p>
+									<button onclick="showText(this)">Reed more...</button>
+									<button class="buy"><a href="https://auto.ria.com/uk/search/?categories.main.id=1&brand.id[0]=48&model.id[0]=424&price.currency=1&abroad.not=0&custom.not=1&page=0&size=10">Buy</a></button>
+								</div>
+						</div>
+					</div>	
+			</div>
+		</div>		
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<p>Copyright @ Example.com 2019</p>
+			</div>
+		</footer>
+</body>
+</html>
